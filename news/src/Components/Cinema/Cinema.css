@@ -1,0 +1,199 @@
+/* Base styles */
+.cinema-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    flex-direction: column; /* Default flex-direction */
+    align-items: center;
+  }
+  
+  .category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .category-buttons button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .category-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  .category-buttons button.active {
+    background-color: #0056b3;
+  }
+  
+  .news-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; /* Flex-direction set for default layout */
+    width: 100%;
+  }
+  
+  .main-news {
+    flex: 2;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .main-news ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .cinema-news-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .cinema-news-item h3 {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .cinema-news-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effects */
+  .cinema-news-item:hover {
+    border-color: #999;
+  }
+  
+  .cinema-news-item:hover img {
+    transform: scale(1.05);
+  }
+  
+  .cinema-news-item:hover h3 {
+    color: #007BFF;
+  }
+  
+  /* Loading and error messages */
+  .loading,
+  .error {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: red;
+  }
+  
+  /* Pagination */
+  .pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    background-color: rgb(20, 17, 17);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination button:hover {
+    background-color: #0056b3;
+  }
+  
+  .pagination button.active {
+    background-color: #0056b3;
+  }
+  
+  /* Slider styles */
+  .slick-slide img {
+    border-radius: 8px;
+    max-width: 100%;
+  }
+  
+  .slick-slide h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .slick-dots li button:before {
+    color: #007BFF;
+  }
+
+ 
+  /* Media Queries for responsiveness */
+  
+  /* Small devices (e.g., smartphones) */
+  @media only screen and (max-width: 767px) {
+    .main-news {
+      justify-content: center;
+      padding: 35px; /* Adjust padding for smaller screens */
+    }
+  
+    .main-news ul {
+      display: flex;
+      flex-direction: column; /* Change to column layout */
+      justify-content: center;
+      gap: 15px; /* Adjust gap between items */
+    }
+  
+    .cinema-news-item {
+      border-bottom: none; /* Remove bottom border between items */
+    }
+  
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    .pagination button {
+      margin: 5px 0;
+    }
+  }
+  
+  /* Medium devices (e.g., tablets) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .main-news {
+      padding: 20px; /* Adjust padding for tablets */
+    }
+    .main-news ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+  
+  /* Large devices (e.g., desktops) */
+  @media (min-width: 1200px) {
+    .cinema-container {
+      margin: 40px; /* Increase margin for larger screens */
+    }
+  
+    .main-news {
+      padding: 30px; /* Adjust padding for desktops */
+    }
+  }
+  

@@ -1,0 +1,190 @@
+.cinema-details-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .cinema-details-container:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cinema-details-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #222;
+    text-align: center;
+  }
+  
+  .cinema-details-container img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .cinema-details-container img:hover {
+    transform: scale(1.05);
+  }
+  
+  .cinema-details-container p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  .cinema-details-container strong {
+    font-weight: bold;
+    color: #111;
+  }
+  
+  .loading,
+  .error {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffeaea;
+    border: 1px solid #ff8080;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ff3c3c;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .details-footer {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .details-footer p {
+    margin: 5px 0;
+    font-size: 1.1em;
+    color: #666;
+  }
+  
+  .related-news {
+    margin-top: 40px;
+  }
+  
+  .related-news h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #222;
+    text-align: center;
+  }
+  
+  .related-news .slick-slide {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .related-news .slick-slide img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .related-news .slick-slide img:hover {
+    transform: scale(1.05);
+  }
+  
+  .related-news .slick-slide h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .cinema-details-container {
+      padding: 15px;
+      margin: 10px;
+    }
+  
+    .cinema-details-container h2 {
+      font-size: 2em;
+    }
+  
+    .cinema-details-container p {
+      font-size: 1em;
+    }
+  
+    .loading,
+    .error {
+      padding: 15px;
+      margin: 10px;
+      font-size: 1em;
+    }
+  
+    .details-footer p {
+      font-size: 1em; /* Adjust font size for smaller screens */
+    }
+  
+    .related-news h2 {
+      font-size: 1.8em;
+    }
+  
+    .related-news .slick-slide h3 {
+      font-size: 1em;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .cinema-details-container {
+      padding: 30px;
+    }
+  
+    .cinema-details-container h2 {
+      font-size: 3em;
+    }
+  
+    .cinema-details-container p {
+      font-size: 1.3em;
+    }
+  
+    .loading,
+    .error {
+      padding: 30px;
+      font-size: 1.2em;
+    }
+  
+    .details-footer p {
+      font-size: 1.2em; /* Adjust font size for larger screens */
+    }
+  
+    .related-news h2 {
+      font-size: 2.5em;
+    }
+  
+    .related-news .slick-slide h3 {
+      font-size: 1.3em;
+    }
+  }
+  
+  /* Category, Date, and Author styling */
+  .details-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .details-footer p {
+    margin: 5px 10px;
+    font-size: 1.1em;
+    color: #666;
+  }
+  
+  .details-footer strong {
+    font-weight: bold;
+    color: #111;
+  }
+  

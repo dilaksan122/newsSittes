@@ -1,0 +1,183 @@
+/* General Styles */
+.header {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 1000;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Logo {
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.Logo:hover {
+  color: #ff6f61;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.newlitter {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.newlitter li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.newlitter a {
+  color: white;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+.newlitter a:hover {
+  color: #ff6f61;
+}
+
+.search-icon {
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+
+.search-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  background-color: #333;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff6f61;
+}
+
+/* Modal Navbar Styles */
+.modal-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s;
+}
+
+.modal-navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-navbar li {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.modal-navbar a {
+  color: white;
+  font-size: 2em;
+  transition: color 0.3s;
+}
+
+.modal-navbar a:hover {
+  color: #ff6f61;
+}
+
+.modal-navbar li:last-child {
+  font-size: 2em;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s;
+}
+
+.modal-navbar li:last-child:hover {
+  color: #ff6f61;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 1.5em;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .modal-navbar ul {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .modal-navbar li {
+    margin: 15px 0;
+  }
+
+  .modal-navbar a {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.2em;
+  }
+
+  .newlitter {
+    font-size: 0.9em;
+  }
+
+  .modal-navbar a {
+    font-size: 1.2em;
+  }
+
+  .modal-navbar li {
+    margin: 10px 0;
+  }
+}

@@ -1,0 +1,116 @@
+/* SportsDetail.css */
+
+.sports-details-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.sports-details-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.sports-details-container img {
+  max-width: 100%;
+  width: 100%;
+  height: 500px; /* Set a fixed height for consistency */
+  object-fit: cover; /* Maintain aspect ratio while filling the container */
+  margin-bottom: 20px;
+}
+
+.sports-details-container p {
+  line-height: 1.6;
+  color: black;
+}
+
+.sports-details-container strong {
+  font-weight: bold;
+  color: black;
+}
+
+.loading,
+.error {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffeaea;
+  border: 1px solid #ff8080;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #ff3c3c;
+  font-weight: bold;
+}
+
+/* Related News Styles */
+.related-news {
+  margin-top: 30px;
+}
+
+.related-news h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.related-news-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.related-news-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.related-news-item img {
+  display: block;
+  width: 100%;
+  height: 300px; /* Set a fixed height for consistency */
+  object-fit: cover; /* Maintain aspect ratio while filling the container */
+}
+
+.related-news-item p {
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Media Queries for Small Devices (e.g., Mobile Phones) */
+@media only screen and (max-width: 600px) {
+  .sports-details-container {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .sports-details-container h2 {
+    font-size: 20px;
+  }
+
+  .related-news-list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .related-news-item img {
+    height: 120px; /* Adjust height for smaller screens */
+  }
+}
+
+/* Media Queries for Large Devices (e.g., Tablets and Desktops) */
+@media only screen and (min-width: 1024px) {
+  .sports-details-container {
+    padding: 30px;
+  }
+
+  .sports-details-container h2 {
+    font-size: 28px;
+  }
+}
